@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .container {
+        width: 29.6%;
+        border: 2px solid black;
+        position: relative;
+      }
+
+      div {
+        text-align: center;
+        font-family: poppins;
+      }
+      .dua {
+        margin-top: 10px;
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        line-height: 100px;
+        color: brown;
+        font-weight: bold;
+        position: absolute;
+        left: 250px;
+        top: -10px;
+      }
+
+      #empat {
+        margin-top: 10px;
+        width: 200px;
+        height: 100px;
+        background-color: lightskyblue;
+        line-height: 100px;
+        color: blueviolet;
+        font-weight: bold;
+        font-size: 30px;
+        transition: all 0.5s ease-in;
+        position: absolute;
+        left: 250px;
+        top: 100px;
+      }
+
+      #empat:hover {
+        background-color: lightslategray;
+        font-size: medium;
+        transition: all 0.5s ease-out;
+      }
+
+      .dua::before {
+        content: "Nomor ";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="satu"
+        style="
+          background-color: lightsalmon;
+          width: 200px;
+          height: 100px;
+          text-align: center;
+          line-height: 100px;
+        "
+      >
+        Kotak 1
+      </div>
+      <div class="dua">Kotak 2</div>
+      <div class="tiga">Kotak 3</div>
+      <div id="empat">Kotak 4</div>
+    </div>
+  </body>
+</html>
